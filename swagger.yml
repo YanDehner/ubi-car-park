@@ -1,0 +1,83 @@
+swagger: "2.0"
+info:
+  description: "This is the car park manager for ubi."
+  version: "1.0.0"
+  title: "Car Park Manager Ubi"
+  contact:
+    email: "yan.dehner@gmx.de"
+host: "localhost"
+basePath: "/"
+tags:
+  - name: "cp"
+    description: "API for Charging Points"
+  - name: "park"
+    description: "Access to report"
+schemes:
+  - "http"
+paths:
+  /cp/plugin:
+    put:
+      tags:
+        - "cp"
+      summary: "Add a newly plugged in car"
+      description: ""
+      produces:
+        - "text/plain"
+      parameters:
+        - name: "cpName"
+          in: "path"
+          description: "name of CP that need to be updated"
+          required: true
+          type: "string"
+      responses:
+        200:
+          description: "Status of given CP updated"
+        404:
+          description: "Unknown CP"
+  /cp/plugoff:
+    put:
+      tags:
+        - "cp"
+      summary: "A car plugged off of the give CP"
+      description: ""
+      produces:
+        - "text/plain"
+      parameters:
+        - name: "cpName"
+          in: "path"
+          description: "name of CP that need to be updated"
+          required: true
+          type: "string"
+      responses:
+        200:
+          description: "Status of given CP updated"
+        404:
+          description: "Unknown CP"
+  /cp/current:
+    get:
+      tags:
+        - "cp"
+      summary: "Gets the allowed max. current for this CP"
+      description: "Allowed current in Ampere"
+      produces:
+        - "text/plain"
+      parameters:
+        - name: "cpName"
+          in: "path"
+          required: true
+          type: "string"
+          description: "Name of the charging point to get the current for"
+      responses:
+        200:
+          description: "successful operation"
+        404:
+          description: "Unknown CP"
+
+  /park/report:
+    get:
+      tags:
+        - "park"
+      summary: "Creates a report of all the managed charging points"
+      responses:
+        200:
+          description: "successful operation"

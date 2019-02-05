@@ -1,0 +1,62 @@
+[
+  {
+    "name": "CP02",
+    "plugged": true,
+    "current": 10,
+    "plugInTimestamp": 1549321017325
+  },
+  {
+    "name": "CP01",
+    "plugged": true,
+    "current": 10,
+    "plugInTimestamp": 1549321017267
+  },
+  {
+    "name": "CP10",
+    "plugged": true,
+    "current": 10,
+    "plugInTimestamp": 1549321017627
+  },
+  {
+    "name": "CP09",
+    "plugged": true,
+    "current": 10,
+    "plugInTimestamp": 1549321017587
+  },
+  {
+    "name": "CP08",
+    "plugged": true,
+    "current": 10,
+    "plugInTimestamp": 1549321017575
+  },
+  {
+    "name": "CP07",
+    "plugged": true,
+    "current": 10,
+    "plugInTimestamp": 1549321017566
+  },
+  {
+    "name": "CP06",
+    "plugged": true,
+    "current": 10,
+    "plugInTimestamp": 1549321017537
+  },
+  {
+    "name": "CP05",
+    "plugged": true,
+    "current": 10,
+    "plugInTimestamp": 1549321017361
+  },
+  {
+    "name": "CP04",
+    "plugged": true,
+    "current": 10,
+    "plugInTimestamp": 1549321017354
+  },
+  {
+    "name": "CP03",
+    "plugged": true,
+    "current": 10,
+    "plugInTimestamp": 1549321017335
+  }
+]

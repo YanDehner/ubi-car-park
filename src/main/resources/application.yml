@@ -1,0 +1,12 @@
+max-current: 100
+high-current: 20
+low-current: 10
+charging-points.names: ["CP01", "CP02", "CP03", "CP04", "CP05", "CP06", "CP07", "CP08", "CP09", "CP10"]
+state-file-directory.path: "target/state"
+
+server:
+  pord: 8080
+
+logging:
+  level:
+    com.carpark.manager: DEBUG
